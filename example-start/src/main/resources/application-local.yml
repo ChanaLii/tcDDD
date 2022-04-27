@@ -1,1 +1,30 @@
-
+#数据源配置
+spring:
+  application:
+    name: example-monkingbird
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/xxl_job?useUnicode=true&characterEncoding=utf8&useFastDateParsing=false
+    username: root
+    password: 12345678
+  redis:
+    redisson:
+      enabled: true
+      server-mode: SINGLE_SERVER
+      #org.redisson.codec.JsonJacksonCodec #org.redisson.codec.FstCodec
+      codec-type: com.mt510.redisson.extension.support.JsonJacksonCodecJava8TimeSupport
+      common-config:
+        idle-connection-timeout: 60000
+        connect-timeout: 60000
+        timeout: 30000
+        ping-timeout: 5000
+        retry-attempts: 3
+        retry-interval: 1500
+        password: redis
+        clientName: ${spring.application.name}-redisson
+        subscriptions-per-connection: 2
+      single-server-config:
+        address: redis://172.18.1.228:6379
+seata:
+  enabled: false

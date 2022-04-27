@@ -5,17 +5,14 @@ import com.triascloud.core.common.constant.TriasModuleConstant;
 import com.triascloud.core.launch.TriasCloudApplication;
 
 /**
- * 工程脚手架
- *
- * @author chenjm
- * @date 2020-10-19
- **/
+ * @author monkingbird
+ */
 @TriascloudApplication
 public class ExampleApplication {
 
     public static void main(String[] args) {
-        final String APPLICATION_EXAMPLE = TriasModuleConstant.APPLICATION_NAME_PREFIX + "example";
-        TriasCloudApplication.run(APPLICATION_EXAMPLE, ExampleApplication.class, args);
+        String applicationExample = TriasModuleConstant.APPLICATION_NAME_PREFIX + "monkingbird";
+        TriasCloudApplication.run(applicationExample, ExampleApplication.class, args);
     }
 
 }

@@ -6,6 +6,7 @@
         <artifactId>triascloud-example</artifactId>
         <groupId>com.triascloud</groupId>
         <version>1.0.0-SNAPSHOT</version>
+        <relativePath/>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <version>${parent.version}</version>
@@ -22,13 +23,13 @@
         <dependency>
             <groupId>com.triascloud</groupId>
             <artifactId>example-client</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.7-RELEASE</version>
         </dependency>
 
         <dependency>
             <groupId>com.triascloud</groupId>
             <artifactId>tenant-center-client</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.1.11-RELEASE</version>
         </dependency>
 
 
