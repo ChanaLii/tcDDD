@@ -1,0 +1,10 @@
+triascloud:
+  version: v1.0.0
+  security:
+    url:
+      exclude-patterns:
+        - "/**/**"
+swagger:
+  contact:
+    name: "xxx"
+    email: "xxx@qq.com"

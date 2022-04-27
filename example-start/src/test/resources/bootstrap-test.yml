@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 172.18.1.228:8848
+        file-extension: yaml
+      discovery:
+        server-addr: 172.18.1.228:8848
+  main:
+    allow-bean-definition-overriding: true
